@@ -59,6 +59,7 @@ module.exports = {
         extensions: ['.jsx'],
       },
     ],
+    'no-console': 'off',
     'react/function-component-definition': [
       2,
       {
