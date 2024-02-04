@@ -105,6 +105,10 @@ class MyDocument extends Document {
             `}
           </style>
           {this.props.styles}
+          <link
+            rel="stylesheet"
+            href="https://storage.googleapis.com/builderbook/nprogress.min.css"
+          />
         </Head>
         <body>
           <Main />
