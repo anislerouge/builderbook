@@ -46,10 +46,10 @@ function setupGoogle({ server, ROOT_URL }) {
 
   passport.deserializeUser((id, done) => {
     User.findById(id, User.publicFields())
-      .then(user => {
+      .then((user) => {
         done(null, user);
       })
-      .catch(error => {
+      .catch((error) => {
         done(error, null);
       });
   });
@@ -71,7 +71,7 @@ function setupGoogle({ server, ROOT_URL }) {
       failureRedirect: '/login',
     }),
     (req, res) => {
-      res.redirect('/');
+      res.redirect('/admin');
     },
   );
 
